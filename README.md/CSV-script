@@ -1,0 +1,23 @@
+##CSV stats CLI 
+-total number of rows present
+-miin , max, and mean of a numeric column
+-Top N rows by the selected column
+
+
+#run this coomand from the project root:
+"python3 tools/csv_stats.py --file data/energy/hourly_prices.csv --top 5 --metric price"
+
+#Sample output of csv stats script
+Row count: 24
+
+price statistics:
+min: 37.8
+max: 63.9
+mean: 49.520833333333336
+
+Top 5 rows by price:
+{'timestamp': '2025-09-30T17:00:00Z', 'price': '63.9'}
+{'timestamp': '2025-09-30T07:00:00Z', 'price': '61.0'}
+{'timestamp': '2025-09-30T16:00:00Z', 'price': '60.2'}
+{'timestamp': '2025-09-30T18:00:00Z', 'price': '59.7'}
+{'timestamp': '2025-09-30T08:00:00Z', 'price': '58.5'}
